@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color:rgb(27, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 10px;
+    background-color: rgb(236, 207, 207);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.container-left{
+    position: relative;
+    background-color: rgb(169, 175, 173);
+    padding: 40px;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+.profile .profile-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .profile-image img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile h3{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.profile h3 span{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.contact{
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+.title{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.contact span{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.skills{
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+.skills-title{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.skills ul{
+    position: relative;
+}
+.skills ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(7, 7, 7);
+    display: inline-block;
+}
+.skills div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(233, 252, 252);
+}
+.language{
+    padding: 20px;
+}
+.language-title{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.language ul{
+    position: relative;
+}
+.language ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+}
+.language div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(233, 252, 252 );
+}
+.container-right{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+.title2{
+    letter-spacing: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.about{
+    padding: 15px;
+    margin: 10px 0;
+}
+.about ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.about span{
+    font-size: 0.9;
+    font-weight: 500;
+}
+.education-title ul{
+    position: relative;
+}
+.about2{
+    padding: 15px;
+    margin: 10px 0;
+}
+.title3{
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.about2 ul li{
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+@media (max-width:1920px) {
+    .container{
+        margin: 50px;
+        max-width: 1650px;
+    }
+}
+@media (max-width:1365px) {
+    .container{
+        margin: 50px;
+        max-width: 1250px;
+    }
+}
+@media (max-width:767px) {
+    .container{
+        max-width: 600px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:359px) {
+
+    .container{
+        margin: 10px;
+        max-width: fit-content;
+        max-height: max-content;
+    }
+}
